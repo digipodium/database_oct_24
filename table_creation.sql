@@ -17,7 +17,7 @@ if not exists
 author(
 	id integer primary key,
     first_name varchar(15),
-    last_naem varchar(15)
+    last_name varchar(15)
 );
 
 -- creating books table
