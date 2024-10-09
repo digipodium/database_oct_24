@@ -16,4 +16,10 @@ values (1, 'Vinayak'),
        (4, 'Anu'),
        (5, 'Kawan');
        
+-- 09 - oct - 24
 select * from students;
+
+
+
+
+
