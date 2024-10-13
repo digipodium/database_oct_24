@@ -47,4 +47,7 @@ group by month
 having total_movies >= 3
 order by month;
 
-
+-- group by having example
+select year, avg(rating), sum(views) from animes
+group by year having avg(rating) >= 8
+order by sum(views);
