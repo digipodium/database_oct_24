@@ -14,7 +14,7 @@ where rating < 8;
 -- between a range 
 select name, release_date
 from movies 
-where rating between 6 and 8 
+where rating between 7.2 and 7.5 
 order by rating;
 
 -- between using dates (YYYY-MM-DD) 
@@ -26,7 +26,7 @@ order by release_date desc;
 -- another date wise example (YYYYMMDD)
 select name, release_date
 from movies
-where release_date < '20100101'
+where release_date <= '20101101'
 order by release_date;
 
 -- multiple condition
@@ -37,7 +37,7 @@ where department_id = 2 and age>30;
 -- multiple condition using or
 select name, salary, age
 from employees
-where salary > 60000 and age < 50;
+where salary > 60000 or age < 50;
 
 -- multiple condition for single column using in
 select name, department_id

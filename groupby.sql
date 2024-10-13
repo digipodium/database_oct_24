@@ -27,4 +27,24 @@ select
  month(salesdate) as month, 
  round(avg(salesamount)) as avg_sales
 from sales
-group by month(salesdate);
+group by month;
+
+-- count movies releases each month
+select 
+	count(id) , 
+    month(release_date) as month
+from movies
+group by month
+order by month;
+
+-- group by having
+-- find which months have movies >= 3
+select
+    monthname(release_date) as month,
+    count(id) as total_movies
+from movies
+group by month
+having total_movies >= 3
+order by month;
+
+
